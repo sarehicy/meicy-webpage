@@ -67,15 +67,28 @@ p{
     top: 50%;
     transform: translateY(-50%);
 
-    font-size: 22px;
-}
+    font-size: 20px;
 
+    transition-duration: 300ms;
+}
+.windowLink:hover{
+    font-size: 21px;
+}
 .contentHolder{
     max-width: 100%;
     
     padding:10px 20px 0 20px;
 
     background-color: rgb(7, 7, 7);
+}
+.column1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.column2{
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 /*notebook*/
@@ -86,14 +99,23 @@ p{
 
     .window{
         width: 45%;
-        height: 700px;
+        height: 500px;
     }
     .windowHeader{
         height: 50px;
     }
 
     .contentHolder{
-        height: 600px;
+        height: 400px;
+    }
+
+    .wrapperIntroduction{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    }
+
+    #selfPicture{
+        width: 200px;
     }
 
 }
