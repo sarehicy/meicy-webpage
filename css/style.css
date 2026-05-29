@@ -32,14 +32,18 @@ h1{
 }
 h2{
     margin: 0;
-    width: fit-content;
+    padding-left: 10px;
 
-    background-color: rgb(141, 46, 111);
+    background-color: rgb(199, 24, 120);
 }
 p{
     font-size: 20px;
 }
+.highlight1{
+    color: rgb(72, 193, 139);
+    font-weight: bold;
 
+}
 .window{
     margin: auto;
 
@@ -67,7 +71,7 @@ p{
 }
 
 .contentHolder{
-    width: 100%;
+    max-width: 100%;
     
     padding:10px 20px 0 20px;
 
