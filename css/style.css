@@ -27,9 +27,11 @@ body{
     font-family: "VT323", monospace;
     color: rgb(255, 254, 235);
 }
+
 h1{
     margin: 0;
 }
+
 h2{
     margin: 0;
     padding-left: 10px;
@@ -81,6 +83,7 @@ p{
 
     background-color: rgb(7, 7, 7);
 }
+
 .column1{
     grid-column-start: 1;
     grid-column-end: 2;
@@ -90,7 +93,18 @@ p{
     grid-column-start: 2;
     grid-column-end: 3;
 }
-
+.row1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.row2{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.row3{
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
 /*notebook*/
 @media screen and (max-width: 1440px){
     body{
@@ -110,12 +124,21 @@ p{
     }
 
     .wrapperIntroduction{
-    display: grid;
-    grid-template-columns: 60% 40%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 1 1 1;
     }
 
     #selfPicture{
-        width: 200px;
+        height: 150px;
+        align-self: start;
+        justify-self: end;
+
+        grid-row-start: 1;
+        grid-row-end: 4;
+
+        justify-self: center;
+        align-self: center;
     }
 
 }
