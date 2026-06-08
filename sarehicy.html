@@ -13,27 +13,37 @@
 <body>
     <div class="window">
         <div class="windowHeader">
-            <div class="windowLink">home</div> <div class="windowLink">|</div>
+            <div class="windowLink" onclick="homeClicked()">home</div> <div class="windowLink">|</div>
             <div class="windowLink"> educação </div> <div class="windowLink">|</div>
-            <div class="windowLink">  interesses </div>
+            <div class="windowLink" onclick="interestsClicked()">  interesses </div>
         </div>
+
         <div class="contentHolder" id="home">
 
             <div class="wrapperIntroduction">
                 <h1 class="column1 row1">Oiê!</h1>
                 <p class="column1 row2">Meu nome é Sarah Meicy e você está no meu site! Sinta-se a vontade para explorar e descobrir mais sobre mim (๑>؂•̀๑).</p>
                 <p class="column1 row3">Este site foi desenvolvido com o objetivo de aplicar alguns conhecimentos de web e servir como uma espécie de "porfolio". </p>
-                <img class="column2" id="selfPicture" src="img/meicy.jpeg" alt="sarah">
+                <div class = "column2" id="popUpWindow">
+                    <p class="margin0"> — ꨄ︎ X </p>              
+                    <img id="selfPicture" src="img/meicy.jpeg" alt="sarah">
+                </div>
             </div>
 
             <h2>Contatos</h2>
             <p><span class="highlight1">E-mail:</span> sarehicybarbosam@gmail.com</p>
             <p><span class="highlight1">Github:</span> github.com/sarehicysarehicy</p>
             <p><span class="highlight1">Instagram:</span> instagram.com/sarehicy</p>
+
+        </div>
+
+        <div class="contentHolder invisible" id="interesses">
+
         </div>
         
     </div>
 
+    <script src="javascript/script.js"></script>
 </body>
 
 </html>

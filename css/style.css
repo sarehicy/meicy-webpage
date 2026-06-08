@@ -21,6 +21,10 @@
   font-style: normal;
 }
 
+.invisible{
+    display: none;
+}
+
 body{
     background-color: rgb(46, 13, 37);
 
@@ -105,6 +109,16 @@ p{
     grid-row-start: 3;
     grid-row-end: 4;
 }
+.margin0{
+    margin: 0;
+}
+#popUpWindow{
+    position: relative;
+    background-color: rgb(199, 24, 120);
+    text-align: right;
+}
+
+
 /*notebook*/
 @media screen and (max-width: 1440px){
     body{
@@ -113,32 +127,39 @@ p{
 
     .window{
         width: 45%;
-        height: 500px;
+        height: 650px;
     }
     .windowHeader{
         height: 50px;
     }
 
     .contentHolder{
-        height: 400px;
+        height: 550px;
     }
 
     .wrapperIntroduction{
         display: grid;
         grid-template-columns: 60% 40%;
         grid-template-rows: 1 1 1;
+
+        margin-bottom: 20px;
     }
 
+    #popUpWindow{
+        grid-row-start: 1;
+        grid-row-end: 4;
+        padding: 0 5px 3px 5px;
+
+        width: fit-content;
+        height: fit-content;
+
+        top: 25px;
+        left: 80px;
+    }
     #selfPicture{
         height: 150px;
         align-self: start;
         justify-self: end;
-
-        grid-row-start: 1;
-        grid-row-end: 4;
-
-        justify-self: center;
-        align-self: center;
     }
 
 }
