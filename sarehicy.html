@@ -13,35 +13,35 @@
 <body>
     <div class="window">
         <div class="windowHeader">
-            <div class="windowLink" onclick="homeClicked()">home</div> <div class="windowLink">|</div>
-            <div class="windowLink"> educação </div> <div class="windowLink">|</div>
-            <div class="windowLink" onclick="interestsClicked()">  interesses </div>
+            <p id="searchBar" >https://sarehicy/webpage</p>
+
+            <div class="square"></div>
+            <div class="square"></div>
         </div>
 
-        <div class="contentHolder invisible" id="home">
+        <div class="contentHolder" id="home">
+            
+            <section id="introduction">
+                <h1>Olá, bem-vindo!</h1>
+                <p>Meu nome é Sarah Meicy e você está no meu site! Sinta-se a vontade para explorar e descobrir mais sobre mim (๑>؂•̀๑).</p>
+                <p>Este site foi desenvolvido com o objetivo de aplicar alguns conhecimentos de web e servir como uma espécie de "porfolio".</p>
+                <img src="assets/meicy.png" alt="cute pixel art of sarah meicy">
+            </section>
 
-            <div class="wrapperIntroduction">
-                <h1 class="column1 row1">Oiê!</h1>
-                <p class="column1 row2">Meu nome é Sarah Meicy e você está no meu site! Sinta-se a vontade para explorar e descobrir mais sobre mim (๑>؂•̀๑).</p>
-                <p class="column1 row3">Este site foi desenvolvido com o objetivo de aplicar alguns conhecimentos de web e servir como uma espécie de "porfolio". </p>
-                <div class = "column2" id="popUpWindow">
-                    <p class="margin0"> — ꨄ︎ X </p>              
-                    <img id="selfPicture" src="img/meicy.jpeg" alt="sarah">
+            <section id="explore">
+                <h3>Explore!</h3>
+
+                <div>
+                    <img src="assets/folder.png" alt="pixel art de uma pasta">
+                    <img src="assets/folder.png" alt="pixel art de uma pasta">
+                    <img src="assets/folder.png" alt="pixel art de uma pasta">
                 </div>
-            </div>
 
-            <h2>Contatos</h2>
-            <p><span class="highlight1">E-mail:</span> sarehicybarbosam@gmail.com</p>
-            <p><span class="highlight1">Github:</span> github.com/sarehicysarehicy</p>
-            <p><span class="highlight1">Instagram:</span> instagram.com/sarehicy</p>
+
+            </section>
 
         </div>
 
-        <div class="contentHolder" id="interesses">
-            <p>Um dos meus hobbies criativos é <span class="highlight2">desenhar!</span></p>
-            <p>Geralmente desenho com lápis grafiti, mas há alguns anos venho experimentado gis pastel oleoso. Não me arrisco muito no digital porque vou bem mal ( ;´ - `;). Mas gosto de fazer pixel art!! </p>
-        </div>
-        
     </div>
 
     <script src="javascript/script.js"></script>
