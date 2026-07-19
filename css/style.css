@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+
 .comic-relief-regular {
   font-family: "Comic Relief", system-ui;
   font-weight: 400;
@@ -25,11 +26,30 @@
     display: none;
 }
 
+:root{
+    /* # Colors! # */
+    --background-color: #2B2D40;
+    --clr-primary-main: #D392F6;
+    --clr-primary-semidark: #5B4567;
+    --clr-primary-dark: #0E112E;
+
+    --clr-n1: #FF86C2;
+    --clr-n2: #FFF193;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 body{
-    background-color: rgb(46, 13, 37);
+    background-color: var(--background-color);
 
     font-family: "VT323", monospace;
-    color: rgb(255, 254, 235);
+    color: var(--clr-primary-dark);
 }
 
 h1{
@@ -45,27 +65,32 @@ h2{
 p{
     font-size: 20px;
 }
-.highlight1{
-    color: rgb(72, 193, 139);
-    font-weight: bold;
 
-}
-.highlight2{
-    color: rgb(255, 196, 70);
-    font-weight: bold;
-}
 .window{
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    background-color: var(--clr-primary-semidark);
 
     border-radius: 15px;
     border-style: solid;
-    border-color: rgb(7, 7, 7);
-    background-color: rgb(141, 46, 111);
+    border-color: var(--clr-n2);
+
+    .windowHeader{
+        text-align: center;   
+    }
+
+    .contentHolder{    
+        flex: 1; /*this makes the container take the remaining space of its parent*/
+
+        background-color: var(--clr-primary-main);
+    }
+
 }
-.windowHeader{
-    width: 100%;
-    text-align: center;   
-}
+
+
 
 .windowLink{
     width: fit-content;
@@ -84,43 +109,7 @@ p{
 .windowLink:hover{
     font-size: 21px;
 }
-.contentHolder{
-    max-width: 100%;
-    
-    padding:10px 20px 0 20px;
 
-    background-color: rgb(7, 7, 7);
-}
-
-.column1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.column2{
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-.row1{
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.row2{
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.row3{
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-.margin0{
-    margin: 0;
-}
-#popUpWindow{
-    position: relative;
-    background-color: rgb(199, 24, 120);
-    text-align: right;
-}
 
 
 /*notebook*/
@@ -130,40 +119,17 @@ p{
     }
 
     .window{
-        width: 45%;
-        height: 650px;
-    }
-    .windowHeader{
-        height: 50px;
-    }
+        width: 46%;
+        height: 500px;
 
-    .contentHolder{
-        height: 550px;
+        .windowHeader{
+            height: 50px;
+        }
+
+        .contentHolder{
+            padding:10px 20px 0 20px;
+        }
     }
-
-    .wrapperIntroduction{
-        display: grid;
-        grid-template-columns: 60% 40%;
-        grid-template-rows: 1 1 1;
-
-        margin-bottom: 20px;
-    }
-
-    #popUpWindow{
-        grid-row-start: 1;
-        grid-row-end: 4;
-        padding: 0 5px 3px 5px;
-
-        width: fit-content;
-        height: fit-content;
-
-        top: 25px;
-        left: 80px;
-    }
-    #selfPicture{
-        height: 150px;
-        align-self: start;
-        justify-self: end;
-    }
+    
 
 }
