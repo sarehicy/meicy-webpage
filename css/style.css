@@ -89,8 +89,16 @@ body{
         h1{
             font-size: 24px;
         }
+        h2{
+            font-size: 22px;
+        }
+
         p{
             font-size: 17px;
+        }
+
+        .folders{
+            display: flex;
         }
     }
 
@@ -129,7 +137,7 @@ body{
         }
 
         .contentHolder{
-            padding: 20px 20px 0 20px;
+            padding: 25px 25px 0 25px;
 
             #introduction{
                 display: grid;
@@ -162,6 +170,18 @@ body{
                 }
             }
 
+            #explore{
+                margin-top: 20px;
+            }
+
+            .folders{
+                padding: 30px 50px 0px 50px;
+                justify-content: space-between;
+
+                img{
+                    width: 100px;
+                }
+            }
 
         }
     }
