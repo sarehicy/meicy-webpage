@@ -1,13 +1,22 @@
+
 const home = document.getElementById("home");
-const interesses = document.getElementById("interesses");
+const education = document.getElementById("education")
 
-function interestsClicked(){
-    home.classList.add("invisible");
-    interesses.classList.remove("invisible");
 
-}
+// const interesses = document.getElementById("interesses");
+// function interestsClicked(){
+//     home.classList.add("invisible");
+//     interesses.classList.remove("invisible");
+
+// }
 
 function homeClicked(){
-    interesses.classList.add("invisible");
+    education.classList.add("invisible");
     home.classList.remove("invisible");
+}
+
+function educationClicked(){
+    home.classList.add("invisible");
+    education.classList.remove("invisible");
+    
 }

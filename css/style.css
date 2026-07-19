@@ -100,6 +100,10 @@ body{
         .folders{
             display: flex;
 
+            
+        }
+
+        .navButton{
             img{
                 width: inherit;
             }
@@ -110,9 +114,14 @@ body{
                 background-color: var(--clr-primary-dark);
             }
         }
+
+        .goBackButton{
+            position: sticky;
+            top: 100%;
+            left: 100%;
+        }
+
     }
-
-
 }
 
 
@@ -147,7 +156,7 @@ body{
         }
 
         .contentHolder{
-            padding: 25px 25px 0 25px;
+            padding: 25px 25px 7px 25px;
 
             #introduction{
                 display: grid;
@@ -195,6 +204,15 @@ body{
                     padding-left: 5px;
                 }
 
+            }
+
+            .navButton{
+                width: 60px;
+
+                p{
+                    padding-left: 5px;
+                }
+                
             }
 
         }
