@@ -99,6 +99,16 @@ body{
 
         .folders{
             display: flex;
+
+            img{
+                width: inherit;
+            }
+
+            p{
+                font-size: 18px;
+                color: var(--clr-primary-main);
+                background-color: var(--clr-primary-dark);
+            }
         }
     }
 
@@ -114,8 +124,8 @@ body{
     }
 
     .window{
-        width: 50%;
-        height: 500px;
+        width: 48%;
+        height: 520px;
 
         .windowHeader{
             height: 45px;
@@ -175,12 +185,16 @@ body{
             }
 
             .folders{
-                padding: 30px 50px 0px 50px;
+                padding: 30px 40px 0px 40px;
                 justify-content: space-between;
 
-                img{
-                    width: 100px;
+                .navButton{
+                    width: 115px;
                 }
+                p{
+                    padding-left: 5px;
+                }
+
             }
 
         }
